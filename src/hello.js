@@ -1,3 +1,3 @@
-const Hello = () => 'Hello';
-
-export default Hello;
+export default function sayHello (name = '') {
+  return `Hello ${name}`;
+}
