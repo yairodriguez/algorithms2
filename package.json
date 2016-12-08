@@ -1,0 +1,30 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "Data Structures and Algorithms in ES6.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "eslint *.js src tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yairodriguez/algorithms.git"
+  },
+  "keywords": [
+    "TDD",
+    "Data Structures",
+    "Algorithms",
+    "ES6",
+    "JavaScript"
+  ],
+  "author": "Yair <@imyairodriguez>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yairodriguez/algorithms/issues"
+  },
+  "homepage": "https://github.com/yairodriguez/algorithms#readme",
+  "devDependencies": {
+    "eslint": "^3.11.1"
+  }
+}
