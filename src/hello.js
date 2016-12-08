@@ -1,3 +1,3 @@
-var Hello = function () { // eslint-disable-line no-unused-vars
-  return 'Hello';
-};
+const Hello = () => 'Hello';
+
+export default Hello;
