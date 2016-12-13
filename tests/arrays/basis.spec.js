@@ -28,4 +28,12 @@ describe('Arrays :: Basis', () => {
     expect(numbers).to.be.an.instanceof(Array);
     expect(numbers.length).to.equal(10);
   });
+
+  it('Arrays do not all have to be of the same type', () => {
+    const objects = [1, 'Jair', true, null];
+
+    expect(objects).to.be.an.instanceof(Array);
+    expect(objects).to.include('Jair');
+    expect(objects.length).to.equal(4);
+  });
 });
