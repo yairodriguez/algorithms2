@@ -44,4 +44,14 @@ describe('Arrays :: Basis', () => {
     expect(Array.isArray(number)).to.be.false; // eslint-disable-line no-unused-expressions
     expect(Array.isArray(array)).to.be.true; // eslint-disable-line no-unused-expressions
   });
+
+  it('should assign the values 1 through 100 to an array', () => {
+    let numbers = [];
+
+    for (let i = 0; i < 100; ++i) {
+      numbers[i] = i;
+    }
+
+    expect(numbers[10]).to.equal(10);
+  });
 });
