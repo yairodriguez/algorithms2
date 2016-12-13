@@ -21,4 +21,11 @@ describe('Arrays :: Basis', () => {
     expect(numbers).to.be.an.instanceof(Array);
     expect(numbers.length).to.equal(0);
   });
+
+  it('should create an array with a single argument specifying the length of array', () => {
+    const numbers = Array(10); //eslint-disable-line no-array-constructor
+
+    expect(numbers).to.be.an.instanceof(Array);
+    expect(numbers.length).to.equal(10);
+  });
 });
