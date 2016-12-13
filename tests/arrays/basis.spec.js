@@ -36,4 +36,12 @@ describe('Arrays :: Basis', () => {
     expect(objects).to.include('Jair');
     expect(objects.length).to.equal(4);
   });
+
+  it('should be possible verify than an object is an array by calling Array.isArray() function', () => {
+    const number = 3;
+    const array = [7, 4, 1776];
+
+    expect(Array.isArray(number)).to.be.false; // eslint-disable-line no-unused-expressions
+    expect(Array.isArray(array)).to.be.true; // eslint-disable-line no-unused-expressions
+  });
 });
