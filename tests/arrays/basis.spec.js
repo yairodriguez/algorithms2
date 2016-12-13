@@ -63,4 +63,12 @@ describe('Arrays :: Basis', () => {
 
     expect(sum).to.equal(15);
   });
+
+  it('Arrays can be created from strings using split() function', () => {
+    const sentence = 'the quick brown fox jumped over the lazy dog';
+    const words = sentence.split(' ');
+
+    expect(words.length).to.equal(9);
+    expect(words).to.include('the', 'quick', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'dog');
+  });
 });
