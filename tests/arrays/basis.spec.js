@@ -48,10 +48,19 @@ describe('Arrays :: Basis', () => {
   it('should assign the values 1 through 100 to an array', () => {
     let numbers = [];
 
-    for (let i = 0; i < 100; ++i) {
+    for (let i = 0; i <= 100; ++i) {
       numbers[i] = i;
     }
 
+    expect(numbers[0]).to.equal(0);
     expect(numbers[10]).to.equal(10);
+    expect(numbers[100]).to.equal(100);
+  });
+
+  it('Arrays are also accessed using [] operator', () => {
+    const numbers = [1, 2, 3, 4, 5];
+    const sum = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4];
+
+    expect(sum).to.equal(15);
   });
 });
