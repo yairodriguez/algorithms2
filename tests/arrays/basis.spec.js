@@ -14,4 +14,11 @@ describe('Arrays :: Basis', () => {
     expect(numbers).to.be.an.instanceof(Array);
     expect(numbers.length).to.equal(5);
   });
+
+  it('should create an array by calling the Array constructor', () => {
+    const numbers = Array(); //eslint-disable-line no-array-constructor
+
+    expect(numbers).to.be.an.instanceof(Array);
+    expect(numbers.length).to.equal(0);
+  });
 });
