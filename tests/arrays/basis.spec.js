@@ -71,4 +71,17 @@ describe('Arrays :: Basis', () => {
     expect(words.length).to.equal(9);
     expect(words).to.include('the', 'quick', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'dog');
   });
+
+  it('should assign one array to another array', () => {
+    let nums = [];
+
+    for (let i = 0; i <= 100; ++i) {
+      nums[i] = i;
+    }
+
+    const sameNums = nums;
+    nums[0] = 400;
+
+    expect(sameNums[0]).to.equal(400);
+  });
 });
